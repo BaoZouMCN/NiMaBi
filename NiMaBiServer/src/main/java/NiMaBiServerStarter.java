@@ -15,7 +15,7 @@ public class NiMaBiServerStarter {
         ServerConfig serverConfig = ctx.getBean(ServerConfig.class);
         int serviceThreads = Integer.parseInt(serverConfig.getServiceThreads());
 
-        
+
 
 
         System.out.println(serviceThreads);
