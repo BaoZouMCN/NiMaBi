@@ -8,14 +8,21 @@ import org.springframework.context.support.PropertySourcesPlaceholderConfigurer;
 @PropertySource("nimabi.properties")
 public class ServerConfig {
 
-    @Value("${serviceThreads}") private String serviceThreads;
+    @Value("#{new Integer('${serverPortNumber}')}")
+    private int serverPortNumber;
+    @Value("#{new Integer('${maxClientAllowed}')}")
+    private int maxClientAllowed;
 
     @Bean
     public static PropertySourcesPlaceholderConfigurer propertySourcesPlaceholderConfigurer() {
         return new PropertySourcesPlaceholderConfigurer();
     }
 
-    public String getServiceThreads() {
-        return serviceThreads;
+    public int getServerPortNumber() {
+        return serverPortNumber;
+    }
+
+    public int getMaxClientAllowed() {
+        return maxClientAllowed;
     }
 }
