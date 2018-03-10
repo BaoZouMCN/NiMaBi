@@ -1,3 +1,4 @@
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -8,10 +9,14 @@ import org.springframework.context.support.PropertySourcesPlaceholderConfigurer;
 @PropertySource("nimabi.properties")
 public class ServerConfig {
 
-    @Value("#{new Integer('${serverPortNumber}')}")
-    private int serverPortNumber;
-    @Value("#{new Integer('${maxClientAllowed}')}")
-    private int maxClientAllowed;
+    private final int serverPortNumber;
+    private final int maxClientAllowed;
+
+    @Autowired
+    public ServerConfig(@Value("#{new Integer('${serverPortNumber}')}") int serverPortNumber, @Value("#{new Integer('${maxClientAllowed}')}") int maxClientAllowed) {
+        this.serverPortNumber = serverPortNumber;
+        this.maxClientAllowed = maxClientAllowed;
+    }
 
     @Bean
     public static PropertySourcesPlaceholderConfigurer propertySourcesPlaceholderConfigurer() {

@@ -10,15 +10,14 @@ public class ClientThread implements Runnable {
 
     private static final Logger logger = Logger.getLogger(ClientThread.class);
     private final Socket clientSocket;
+    private final CoinGenerator coinGenerator;
+    private final ClientMessageChecker clientMessageChecker;
 
     @Autowired
-    private CoinGenerator coinGenerator;
-
-    @Autowired
-    private ClientMessageChecker clientMessageChecker;
-
-    public ClientThread(Socket clientSocket) {
+    public ClientThread(Socket clientSocket, ClientMessageChecker clientMessageChecker, CoinGenerator coinGenerator){
         this.clientSocket = clientSocket;
+        this.clientMessageChecker = clientMessageChecker;
+        this.coinGenerator = coinGenerator;
     }
 
     public void run() {
@@ -36,13 +35,13 @@ public class ClientThread implements Runnable {
                         //TODO return generated coin to client
                         break;
                     default:
-                        logger.error("Unable to recognize request type from client with clientAccountID=" + clientMessage.getClientAccountID() + " and requestType=" + clientMessage.getRequestType());
+                        logger.error("Unable to recognise request type from client with clientAccountID=" + clientMessage.getClientAccountID() + " and requestType=" + clientMessage.getRequestType());
                 }
 
             }
             clientSocket.close();
-        } catch (ClientMessageException e) {
-            logger.error("Invalid client message", e);
+        } catch (ClientMessageException | CoinGeneratorException e) {
+            logger.error(e);
         } catch (IOException e) {
             logger.error("Error closing client connection", e);
         }

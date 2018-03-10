@@ -36,7 +36,7 @@ public class NiMaBiServerStarter {
                 try {
                     Socket socket = serverSocket.accept();
                     logger.debug("Processing request");
-                    clientThreadExecutorService.submit(new ClientThread(socket));
+                    clientThreadExecutorService.submit(new ClientThread(socket, ctx.getBean(ClientMessageChecker.class), ctx.getBean(CoinGenerator.class)));
                 } catch (IOException e) {
                     logger.error("Error accepting connection", e);
                 }

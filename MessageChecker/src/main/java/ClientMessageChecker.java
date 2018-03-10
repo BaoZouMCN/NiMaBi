@@ -14,12 +14,16 @@ public class ClientMessageChecker {
 
         logger.debug("Checking client message format");
         if (clientMessageArray.length != 3) {
-            throw new ClientMessageException("Client message incomplete: " + clientMessage + " Correct format is: 'clientAccountID'|'requestType'|'requestDetails'");
+            String errorMsg = "Client message incomplete: " + clientMessage + " Correct format is: 'clientAccountID'|'requestType'|'requestDetails'";
+            logger.error(errorMsg);
+            throw new ClientMessageException(errorMsg);
         }
 
         logger.debug("Checking client message clientAccountID");
         if (clientMessageArray[0].length() != 36) {
-            throw new ClientMessageException("Invalid client account ID length");
+            String errorMsg = "Invalid client account ID length";
+            logger.error(errorMsg);
+            throw new ClientMessageException(errorMsg);
         }
 
         logger.debug("Checking client message requestType");
@@ -27,7 +31,9 @@ public class ClientMessageChecker {
         try {
             availableRequestTypes.contains(ClientMessage.RequestType.valueOf(clientMessageArray[1]));
         } catch (IllegalArgumentException e) {
-            throw new ClientMessageException("Invalid request type");
+            String errorMsg = "Invalid request type";
+            logger.error(errorMsg);
+            throw new ClientMessageException(errorMsg);
         }
 
         logger.debug("Checking client message requestDetails");
