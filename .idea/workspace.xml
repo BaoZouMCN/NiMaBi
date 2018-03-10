@@ -5,16 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a15af3b8-cd2d-4275-aea5-6567bec5aa0b" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/CoinGenerator/src/main/java/CoinGeneratorException.java" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/Coin/src/main/java/CharacterCoin.java" afterPath="$PROJECT_DIR$/Coin/src/main/java/CharacterCoin.java" />
-      <change beforePath="$PROJECT_DIR$/CoinGenerator/src/main/java/CoinGenerator.java" afterPath="$PROJECT_DIR$/CoinGenerator/src/main/java/CoinGenerator.java" />
-      <change beforePath="$PROJECT_DIR$/MessageChecker/src/main/java/ClientMessageChecker.java" afterPath="$PROJECT_DIR$/MessageChecker/src/main/java/ClientMessageChecker.java" />
-      <change beforePath="$PROJECT_DIR$/MessageChecker/src/main/java/ClientMessageException.java" afterPath="$PROJECT_DIR$/MessageChecker/src/main/java/ClientMessageException.java" />
-      <change beforePath="$PROJECT_DIR$/NiMaBiServer/src/main/java/ClientThread.java" afterPath="$PROJECT_DIR$/NiMaBiServer/src/main/java/ClientThread.java" />
-      <change beforePath="$PROJECT_DIR$/NiMaBiServer/src/main/java/NiMaBiServerStarter.java" afterPath="$PROJECT_DIR$/NiMaBiServer/src/main/java/NiMaBiServerStarter.java" />
-      <change beforePath="$PROJECT_DIR$/NiMaBiServer/src/main/java/ServerConfig.java" afterPath="$PROJECT_DIR$/NiMaBiServer/src/main/java/ServerConfig.java" />
-      <change beforePath="$PROJECT_DIR$/NiMaBiServer/src/main/resources/nimabi.properties" afterPath="$PROJECT_DIR$/NiMaBiServer/src/main/resources/nimabi.properties" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_5_0_4_RELEASE.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_5_0_4_RELEASE.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_5_0_4_RELEASE.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_5_0_4_RELEASE.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_5_0_4_RELEASE.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jcl_5_0_4_RELEASE.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -212,6 +214,11 @@
             <path>
               <item name="NiMaBi" type="b2602c69:ProjectViewProjectNode" />
               <item name="NiMaBi" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="NiMaBi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="NiMaBi" type="462c0819:PsiDirectoryNode" />
+              <item name=".idea" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="NiMaBi" type="b2602c69:ProjectViewProjectNode" />
@@ -569,7 +576,14 @@
       <option name="project" value="LOCAL" />
       <updated>1520504406120</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="1.Adding CoinGenerator specific exceptions&#10;2.Adding Add new probabilities in nimabi.properties&#10;3.Adding enum for character coins&#10;4.Rearranging spring format for autowiring">
+      <created>1520680770579</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1520680770579</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -587,7 +601,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -616,7 +630,8 @@
     <MESSAGE value="1.Integrating Spring framework." />
     <MESSAGE value="1.Adding git ignore" />
     <MESSAGE value="1.Adding client-server communication.&#10;2.Adding Coin class.&#10;3.Adding mechanism to generate coin.&#10;4.Adding validity checks for messages sent by client." />
-    <option name="LAST_COMMIT_MESSAGE" value="1.Adding client-server communication.&#10;2.Adding Coin class.&#10;3.Adding mechanism to generate coin.&#10;4.Adding validity checks for messages sent by client." />
+    <MESSAGE value="1.Adding CoinGenerator specific exceptions&#10;2.Adding Add new probabilities in nimabi.properties&#10;3.Adding enum for character coins&#10;4.Rearranging spring format for autowiring" />
+    <option name="LAST_COMMIT_MESSAGE" value="1.Adding CoinGenerator specific exceptions&#10;2.Adding Add new probabilities in nimabi.properties&#10;3.Adding enum for character coins&#10;4.Rearranging spring format for autowiring" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
