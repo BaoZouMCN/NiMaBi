@@ -1,6 +1,8 @@
+import java.util.UUID;
+
 public abstract class Coin {
 
-    private String ID;
+    private UUID ID;
     private final int value = 1;
     private CoinHistory coinHistory;
 

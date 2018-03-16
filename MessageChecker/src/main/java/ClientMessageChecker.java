@@ -20,8 +20,10 @@ public class ClientMessageChecker {
         }
 
         logger.debug("Checking client message clientAccountID");
-        if (clientMessageArray[0].length() != 36) {
-            String errorMsg = "Invalid client account ID length";
+        try{
+            Integer.parseInt(clientMessageArray[0]);
+        } catch (NumberFormatException e) {
+            String errorMsg = "Invalid client account ID";
             logger.error(errorMsg);
             throw new ClientMessageException(errorMsg);
         }
