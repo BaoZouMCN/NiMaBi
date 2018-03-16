@@ -2,17 +2,12 @@
 <project version="4">
   <component name="BookmarkManager">
     <bookmark url="file://$PROJECT_DIR$/CoinGenerator/src/main/java/CoinGenerator.java" line="3" mnemonic="2" />
+    <bookmark url="file://$PROJECT_DIR$/Database/src/main/java/BusinessObject/CoinBOImpl.java" line="30" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a15af3b8-cd2d-4275-aea5-6567bec5aa0b" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+    <list default="true" id="a15af3b8-cd2d-4275-aea5-6567bec5aa0b" name="Default" comment="1.Adding mysql database support">
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_5_0_4_RELEASE.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_5_0_4_RELEASE.xml" afterPath="" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_5_0_4_RELEASE.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_5_0_4_RELEASE.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_5_0_4_RELEASE.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jcl_5_0_4_RELEASE.xml" afterPath="" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="" />
       <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterPath="" />
@@ -28,6 +23,9 @@
     <ignored path="$PROJECT_DIR$/CoinGenerator/target/" />
     <ignored path="$PROJECT_DIR$/MessageChecker/target/" />
     <ignored path="$PROJECT_DIR$/Message/target/" />
+    <ignored path="$PROJECT_DIR$/DAO/target/" />
+    <ignored path="$PROJECT_DIR$/Hibernate/target/" />
+    <ignored path="$PROJECT_DIR$/Database/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -40,14 +38,72 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ClientThread.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/NiMaBiServer/src/main/java/ClientThread.java">
+      <file leaf-file-name="GeneratedCoinBOImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Database/src/main/java/BusinessObject/GeneratedCoinBOImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="481">
-              <caret line="42" column="60" lean-forward="false" selection-start-line="42" selection-start-column="60" selection-end-line="42" selection-end-column="60" />
+            <state relative-caret-position="250">
+              <caret line="16" column="50" lean-forward="false" selection-start-line="16" selection-start-column="50" selection-end-line="16" selection-end-column="50" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#311#312#0" expanded="true" />
+                <element signature="e#367#368#0" expanded="true" />
+                <element signature="e#419#420#0" expanded="true" />
+                <element signature="e#476#477#0" expanded="true" />
+                <element signature="e#530#531#0" expanded="true" />
+                <element signature="e#589#590#0" expanded="true" />
+                <element signature="e#643#644#0" expanded="true" />
+                <element signature="e#702#703#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Database/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="350">
+              <caret line="14" column="38" lean-forward="false" selection-start-line="14" selection-start-column="38" selection-end-line="14" selection-end-column="38" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ClientDAO.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Database/src/main/java/DAO/ClientDAO.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="425">
+              <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CoinHistoryDAOImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Database/src/main/java/DAO/CoinHistoryDAOImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="275">
+              <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CoinDAO.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Database/src/main/java/DAO/CoinDAO.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="100">
+              <caret line="5" column="17" lean-forward="false" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -62,11 +118,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CoinGenerator.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CoinGenerator/src/main/java/CoinGenerator.java">
+      <file leaf-file-name="CoinHistoryDAO.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Database/src/main/java/DAO/CoinHistoryDAO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1725">
-              <caret line="71" column="5" lean-forward="false" selection-start-line="71" selection-start-column="5" selection-end-line="71" selection-end-column="5" />
+            <state relative-caret-position="100">
+              <caret line="6" column="17" lean-forward="false" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -74,40 +130,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ClientMessageException.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MessageChecker/src/main/java/ClientMessageException.java">
+      <file leaf-file-name="CoinDAOImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Database/src/main/java/DAO/CoinDAOImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="13" lean-forward="false" selection-start-line="0" selection-start-column="13" selection-end-line="0" selection-end-column="13" />
+            <state relative-caret-position="100">
+              <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
               <folding>
-                <element signature="e#93#94#0" expanded="true" />
-                <element signature="e#116#117#0" expanded="true" />
-                <element signature="e#169#170#0" expanded="true" />
-                <element signature="e#199#200#0" expanded="true" />
-                <element signature="e#269#270#0" expanded="true" />
-                <element signature="e#306#307#0" expanded="true" />
-                <element signature="e#360#361#0" expanded="true" />
-                <element signature="e#388#389#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="NiMaBiServerStarter.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/NiMaBiServer/src/main/java/NiMaBiServerStarter.java">
+      <file leaf-file-name="Client.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Database/src/main/java/Model/Client.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="725">
-              <caret line="38" column="63" lean-forward="false" selection-start-line="38" selection-start-column="63" selection-end-line="38" selection-end-column="63" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="nimabi.properties" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/NiMaBiServer/src/main/resources/nimabi.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="6" column="39" lean-forward="false" selection-start-line="6" selection-start-column="39" selection-end-line="6" selection-end-column="39" />
+            <state relative-caret-position="275">
+              <caret line="11" column="36" lean-forward="false" selection-start-line="11" selection-start-column="36" selection-end-line="11" selection-end-column="36" />
               <folding />
             </state>
           </provider>
@@ -119,11 +158,22 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>'</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>``</replace>
+      <replace>`</replace>
+    </replaceStrings>
+  </component>
   <component name="Git.Settings">
+    <option name="UPDATE_TYPE" value="MERGE" />
     <option name="ROOT_SYNC" value="DONT_SYNC" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -140,42 +190,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$USER_HOME$/.m2/settings.xml" />
-        <option value="$PROJECT_DIR$/Core/src/main/java/NiMaBiStarter.java" />
-        <option value="$PROJECT_DIR$/Core/src/main/java/PropertiesConfig.java" />
-        <option value="$PROJECT_DIR$/Core/src/main/java/PropertiesWithJavaConfig.java" />
-        <option value="$PROJECT_DIR$/nimabi.properties" />
-        <option value="$PROJECT_DIR$/EnvironmentSetup/src/main/java/PropertiesWithJavaConfig.java" />
-        <option value="$PROJECT_DIR$/Core/src/main/java/NiMaBiServerStarter.java" />
-        <option value="$PROJECT_DIR$/Core/pom.xml" />
-        <option value="$PROJECT_DIR$/EnvironmentSetup/src/main/resources/nimabi.properties" />
-        <option value="$PROJECT_DIR$/Coin/src/main/java/CoinBase.java" />
-        <option value="$PROJECT_DIR$/log4j.properties" />
-        <option value="$PROJECT_DIR$/NiMaBiServer/src/main/resources/log4j.properties" />
-        <option value="$PROJECT_DIR$/NiMaBiServer/src/main/java/WorkerThread.java" />
-        <option value="$PROJECT_DIR$/CoinGenerator/src/main/java/CoinGeneratorThread.java" />
-        <option value="$PROJECT_DIR$/CoinGenerator/pom.xml" />
-        <option value="$PROJECT_DIR$/Coin/src/main/java/Coin.java" />
-        <option value="$PROJECT_DIR$/MessageChecker/src/main/java/InvalidMessageException.java" />
-        <option value="$PROJECT_DIR$/MessageChecker/src/main/java/ClientCommunicationException.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/MessageChecker/src/main/java/ClientCommunicationChecker.java" />
-        <option value="$PROJECT_DIR$/MessageChecker/pom.xml" />
-        <option value="$PROJECT_DIR$/NiMaBiServer/pom.xml" />
-        <option value="$PROJECT_DIR$/Message/src/main/java/RequestType.java" />
-        <option value="$PROJECT_DIR$/Message/src/main/java/ClientMessage.java" />
-        <option value="$PROJECT_DIR$/Coin/src/main/java/StandardCoin.java" />
-        <option value="$PROJECT_DIR$/Coin/src/main/java/CoinHistory.java" />
-        <option value="$PROJECT_DIR$/NiMaBiServer/src/main/resources/nimabi.properties" />
-        <option value="$PROJECT_DIR$/MessageChecker/src/main/java/ClientMessageException.java" />
-        <option value="$PROJECT_DIR$/CoinGenerator/src/main/java/CoinGeneratorException.java" />
-        <option value="$PROJECT_DIR$/Coin/src/main/java/CharacterCoin.java" />
-        <option value="$PROJECT_DIR$/NiMaBiServer/src/main/java/ClientThread.java" />
-        <option value="$PROJECT_DIR$/NiMaBiServer/src/main/java/NiMaBiServerStarter.java" />
-        <option value="$PROJECT_DIR$/MessageChecker/src/main/java/ClientMessageChecker.java" />
-        <option value="$PROJECT_DIR$/NiMaBiServer/src/main/java/ServerConfig.java" />
         <option value="$PROJECT_DIR$/CoinGenerator/src/main/java/CoinGenerator.java" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/NiMaBiServer/pom.xml" />
+        <option value="$PROJECT_DIR$/NiMaBiServer/src/main/java/NiMaBiServerStarter.java" />
+        <option value="$PROJECT_DIR$/DAO/src/main/java/Client.java" />
+        <option value="$PROJECT_DIR$/DAO/pom.xml" />
+        <option value="$PROJECT_DIR$/Hibernate/src/main/java/Entities/Client.java" />
+        <option value="$PROJECT_DIR$/Hibernate/pom.xml" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/MessageChecker/src/main/java/ClientMessageChecker.java" />
+        <option value="$PROJECT_DIR$/Coin/src/main/java/Coin.java" />
+        <option value="$PROJECT_DIR$/sql/environment_setup_sql.sql" />
+        <option value="$PROJECT_DIR$/sql/triggers.sql" />
+        <option value="$PROJECT_DIR$/sql/tables.sql" />
+        <option value="$PROJECT_DIR$/Database/src/main/java/Entities/Client.java" />
+        <option value="$PROJECT_DIR$/Database/src/main/java/Entities/coin.java" />
+        <option value="$PROJECT_DIR$/Database/src/main/java/Entities/Coin.java" />
+        <option value="$PROJECT_DIR$/Database/src/main/java/Entities/GeneratedCoin.java" />
+        <option value="$PROJECT_DIR$/Database/src/main/java/Entities/Event.java" />
+        <option value="$PROJECT_DIR$/Database/src/main/java/Entities/CoinHistory.java" />
+        <option value="$PROJECT_DIR$/Database/src/main/java/BusinessObject/CoinHistory.java" />
+        <option value="$PROJECT_DIR$/Database/src/main/java/BusinessObject/Coin.java" />
+        <option value="$PROJECT_DIR$/Database/src/main/java/BusinessObject/Event.java" />
+        <option value="$PROJECT_DIR$/Database/src/main/java/BusinessObject/GeneratedCoin.java" />
+        <option value="$PROJECT_DIR$/Database/pom.xml" />
+        <option value="$PROJECT_DIR$/Database/src/main/java/BusinessObject/ClientImpl.java" />
+        <option value="$PROJECT_DIR$/Database/src/main/java/BusinessObject/Client.java" />
+        <option value="$PROJECT_DIR$/Database/src/main/java/BusinessObject/CoinImpl.java" />
+        <option value="$PROJECT_DIR$/Database/src/main/java/BusinessObject/EventImpl.java" />
+        <option value="$PROJECT_DIR$/Database/src/main/java/BusinessObject/CoinHistoryImpl.java" />
+        <option value="$PROJECT_DIR$/Database/src/main/java/BusinessObject/GeneratedCoinImpl.java" />
+        <option value="$PROJECT_DIR$/Database/src/main/java/BusinessObject/ClientBO.java" />
+        <option value="$PROJECT_DIR$/Database/src/main/java/BusinessObject/ClientBOImpl.java" />
+        <option value="$PROJECT_DIR$/Database/src/main/java/DAO/CoinDAOImpl.java" />
+        <option value="$PROJECT_DIR$/Database/src/main/java/BusinessObject/CoinBOImpl.java" />
+        <option value="$PROJECT_DIR$/Database/src/main/java/BusinessObject/CoinHistoryBOImpl.java" />
+        <option value="$PROJECT_DIR$/Database/src/main/java/DAO/CoinHistoryDAO.java" />
+        <option value="$PROJECT_DIR$/Database/src/main/java/DAO/CoinDAO.java" />
+        <option value="$PROJECT_DIR$/Database/src/main/java/DAO/ClientDAO.java" />
+        <option value="$PROJECT_DIR$/Database/src/main/java/DAO/ClientDAOImpl.java" />
+        <option value="$PROJECT_DIR$/Database/src/main/java/DAO/CoinHistoryDAOImpl.java" />
+        <option value="$PROJECT_DIR$/Database/src/main/java/DAO/EventDAOImpl.java" />
+        <option value="$PROJECT_DIR$/Database/src/main/java/DAO/GeneratedCoinDAO.java" />
+        <option value="$PROJECT_DIR$/Database/src/main/java/DAO/GeneratedCoinDAOImpl.java" />
+        <option value="$PROJECT_DIR$/Database/src/main/java/BusinessObject/EventBOImpl.java" />
+        <option value="$PROJECT_DIR$/Database/src/main/java/BusinessObject/GeneratedCoinBO.java" />
+        <option value="$PROJECT_DIR$/Database/src/main/java/BusinessObject/GeneratedCoinBOImpl.java" />
+        <option value="$PROJECT_DIR$/Database/src/main/java/DAO/EventDAO.java" />
+        <option value="$PROJECT_DIR$/Database/src/main/java/BusinessObject/EventBO.java" />
+        <option value="$PROJECT_DIR$/Database/src/main/java/BusinessObject/CoinHistoryBO.java" />
+        <option value="$PROJECT_DIR$/Database/src/main/java/BusinessObject/CoinBO.java" />
       </list>
     </option>
   </component>
@@ -192,9 +257,9 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="260" />
-    <option name="y" value="20" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="152" />
+    <option name="y" value="15" />
     <option name="width" value="1400" />
     <option name="height" value="1000" />
   </component>
@@ -216,9 +281,10 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="AndroidView" />
+      <pane id="Scratches" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -229,43 +295,6 @@
             <path>
               <item name="NiMaBi" type="b2602c69:ProjectViewProjectNode" />
               <item name="NiMaBi" type="462c0819:PsiDirectoryNode" />
-              <item name=".idea" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="NiMaBi" type="b2602c69:ProjectViewProjectNode" />
-              <item name="NiMaBi" type="462c0819:PsiDirectoryNode" />
-              <item name=".idea" type="462c0819:PsiDirectoryNode" />
-              <item name="libraries" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="NiMaBi" type="b2602c69:ProjectViewProjectNode" />
-              <item name="NiMaBi" type="462c0819:PsiDirectoryNode" />
-              <item name="Coin" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="NiMaBi" type="b2602c69:ProjectViewProjectNode" />
-              <item name="NiMaBi" type="462c0819:PsiDirectoryNode" />
-              <item name="Coin" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="NiMaBi" type="b2602c69:ProjectViewProjectNode" />
-              <item name="NiMaBi" type="462c0819:PsiDirectoryNode" />
-              <item name="Coin" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="NiMaBi" type="b2602c69:ProjectViewProjectNode" />
-              <item name="NiMaBi" type="462c0819:PsiDirectoryNode" />
-              <item name="Coin" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="NiMaBi" type="b2602c69:ProjectViewProjectNode" />
-              <item name="NiMaBi" type="462c0819:PsiDirectoryNode" />
               <item name="CoinGenerator" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -288,6 +317,59 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="NiMaBi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="NiMaBi" type="462c0819:PsiDirectoryNode" />
+              <item name="Database" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="NiMaBi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="NiMaBi" type="462c0819:PsiDirectoryNode" />
+              <item name="Database" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="NiMaBi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="NiMaBi" type="462c0819:PsiDirectoryNode" />
+              <item name="Database" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="NiMaBi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="NiMaBi" type="462c0819:PsiDirectoryNode" />
+              <item name="Database" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="NiMaBi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="NiMaBi" type="462c0819:PsiDirectoryNode" />
+              <item name="Database" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="BusinessObject" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="NiMaBi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="NiMaBi" type="462c0819:PsiDirectoryNode" />
+              <item name="Database" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="DAO" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="NiMaBi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="NiMaBi" type="462c0819:PsiDirectoryNode" />
+              <item name="Database" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="Model" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="NiMaBi" type="b2602c69:ProjectViewProjectNode" />
@@ -375,33 +457,37 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="NiMaBi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="NiMaBi" type="462c0819:PsiDirectoryNode" />
+              <item name="sql" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15332031" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Administrator\Desktop\NiMaBi\NiMaBiServer\src\main\resources" />
-      <recent name="C:\Users\Administrator\Desktop\NiMaBi\src\main\resources" />
-      <recent name="C:\Users\Administrator\Desktop\NiMaBi\EnvironmentSetup\src\main\resources" />
-      <recent name="C:\Users\Administrator\Desktop\NiMaBi\EnvironmentSetup\src\main\java" />
-      <recent name="C:\Users\Administrator\Desktop\NiMaBi\EnvironmentSetup" />
-    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Administrator\Desktop\NiMaBi" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Administrator\Desktop\NiMaBi\Hibernate\src\main\java" />
+      <recent name="C:\Users\Administrator\Desktop\NiMaBi\NiMaBiServer\src\main\resources" />
+      <recent name="C:\Users\Administrator\Desktop\NiMaBi\src\main\resources" />
+      <recent name="C:\Users\Administrator\Desktop\NiMaBi\EnvironmentSetup\src\main\resources" />
+      <recent name="C:\Users\Administrator\Desktop\NiMaBi\EnvironmentSetup\src\main\java" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -427,7 +513,7 @@
     <configuration name="NiMaBiServer" type="Application" factoryName="Application">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="MAIN_CLASS_NAME" value="NiMaBiServerStarter" />
-      <option name="VM_PARAMETERS" value="" />
+      <option name="VM_PARAMETERS" value="--add-opens java.base/java.lang=ALL-UNNAMED" />
       <option name="PROGRAM_PARAMETERS" value="" />
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -569,26 +655,39 @@
       <option name="project" value="LOCAL" />
       <updated>1520681095769</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="1.Adding CoinGenerator specific exceptions&#10;2.Adding Add new probabilities in nimabi.properties&#10;3.Adding enum for character coins&#10;4.Rearranging spring format for autowiring">
+      <created>1520681224994</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1520681224994</updated>
+    </task>
+    <task id="LOCAL-00008" summary="1.Adding mysql database support">
+      <created>1521174375061</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1521174375061</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
+    <frame x="152" y="15" width="1400" height="1000" extended-state="0" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32979852" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3511008" sideWeight="0.73554915" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297062" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297062" sideWeight="0.49791667" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3511008" sideWeight="0.26445088" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3468208" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -609,6 +708,8 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
     <ignored-roots>
       <path value="$PROJECT_DIR$/.idea" />
       <path value="$PROJECT_DIR$" />
@@ -618,11 +719,12 @@
     <MESSAGE value="1.Adding git ignore" />
     <MESSAGE value="1.Adding client-server communication.&#10;2.Adding Coin class.&#10;3.Adding mechanism to generate coin.&#10;4.Adding validity checks for messages sent by client." />
     <MESSAGE value="1.Adding CoinGenerator specific exceptions&#10;2.Adding Add new probabilities in nimabi.properties&#10;3.Adding enum for character coins&#10;4.Rearranging spring format for autowiring" />
-    <option name="LAST_COMMIT_MESSAGE" value="1.Adding CoinGenerator specific exceptions&#10;2.Adding Add new probabilities in nimabi.properties&#10;3.Adding enum for character coins&#10;4.Rearranging spring format for autowiring" />
+    <MESSAGE value="1.Adding mysql database support" />
+    <option name="LAST_COMMIT_MESSAGE" value="1.Adding mysql database support" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="10" />
+      <option name="time" value="12" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -641,31 +743,10 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/NiMaBiServer/src/main/java/ClientThread.java">
+    <entry file="file://$PROJECT_DIR$/.idea/libraries/Maven__log4j_log4j_1_2_17.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CoinGenerator/src/main/java/CoinGenerator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1725">
-          <caret line="71" column="5" lean-forward="false" selection-start-line="71" selection-start-column="5" selection-end-line="71" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/NiMaBiServer/src/main/java/NiMaBiServerStarter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="725">
-          <caret line="38" column="63" lean-forward="false" selection-start-line="38" selection-start-column="63" selection-end-line="38" selection-end-column="63" />
-          <folding />
+        <state relative-caret-position="300">
+          <caret line="12" column="12" lean-forward="true" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="12" />
         </state>
       </provider>
     </entry>
@@ -674,14 +755,14 @@
         <state relative-caret-position="0">
           <caret line="0" column="13" lean-forward="false" selection-start-line="0" selection-start-column="13" selection-end-line="0" selection-end-column="13" />
           <folding>
-            <element signature="e#93#94#0" expanded="true" />
-            <element signature="e#116#117#0" expanded="true" />
-            <element signature="e#169#170#0" expanded="true" />
-            <element signature="e#199#200#0" expanded="true" />
-            <element signature="e#269#270#0" expanded="true" />
-            <element signature="e#306#307#0" expanded="true" />
-            <element signature="e#360#361#0" expanded="true" />
-            <element signature="e#388#389#0" expanded="true" />
+            <element signature="e#93#94#0" expanded="false" />
+            <element signature="e#116#117#0" expanded="false" />
+            <element signature="e#169#170#0" expanded="false" />
+            <element signature="e#199#200#0" expanded="false" />
+            <element signature="e#269#270#0" expanded="false" />
+            <element signature="e#306#307#0" expanded="false" />
+            <element signature="e#360#361#0" expanded="false" />
+            <element signature="e#388#389#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -690,107 +771,40 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="6" column="39" lean-forward="false" selection-start-line="6" selection-start-column="39" selection-end-line="6" selection-end-column="39" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/NiMaBiServer/src/main/java/ClientThread.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="497">
+          <caret line="33" column="91" lean-forward="false" selection-start-line="33" selection-start-column="91" selection-end-line="33" selection-end-column="91" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CoinGenerator/src/main/java/CoinGenerator.java">
+    <entry file="file://$PROJECT_DIR$/../.m2/org/springframework/boot/spring-boot-dependencies/2.0.0.RELEASE/spring-boot-dependencies-2.0.0.RELEASE.pom">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1725">
-          <caret line="71" column="5" lean-forward="false" selection-start-line="71" selection-start-column="5" selection-end-line="71" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="196">
+          <caret line="504" column="12" lean-forward="false" selection-start-line="504" selection-start-column="12" selection-end-line="504" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../.m2/org/springframework/boot/spring-boot/2.0.0.RELEASE/spring-boot-2.0.0.RELEASE.jar!/org/springframework/boot/SpringApplication.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="13546">
+          <caret line="727" column="77" lean-forward="false" selection-start-line="727" selection-start-column="77" selection-end-line="727" selection-end-column="77" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/NiMaBiServer/src/main/java/NiMaBiServerStarter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="725">
-          <caret line="38" column="63" lean-forward="false" selection-start-line="38" selection-start-column="63" selection-end-line="38" selection-end-column="63" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/NiMaBiServer/src/main/resources/nimabi.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="6" column="39" lean-forward="true" selection-start-line="6" selection-start-column="39" selection-end-line="6" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MessageChecker/src/main/java/ClientMessageException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="13" lean-forward="false" selection-start-line="0" selection-start-column="13" selection-end-line="0" selection-end-column="13" />
+        <state relative-caret-position="175">
+          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
           <folding>
-            <element signature="e#93#94#0" expanded="true" />
-            <element signature="e#116#117#0" expanded="true" />
-            <element signature="e#169#170#0" expanded="true" />
-            <element signature="e#199#200#0" expanded="true" />
-            <element signature="e#269#270#0" expanded="true" />
-            <element signature="e#306#307#0" expanded="true" />
-            <element signature="e#360#361#0" expanded="true" />
-            <element signature="e#388#389#0" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/NiMaBiServer/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.m2/settings.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" column="11" lean-forward="true" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/EnvironmentSetup/pom.xml" />
-    <entry file="file://$PROJECT_DIR$/EnvironmentSetup/src/main/java/PropertiesWithJavaConfig.java" />
-    <entry file="file://$PROJECT_DIR$/settings.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="5" column="11" lean-forward="false" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/NiMaBi.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/NiMaBiServer/NiMaBiServer.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="9" column="44" lean-forward="false" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="44" />
         </state>
       </provider>
     </entry>
@@ -802,35 +816,48 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Coin/src/main/java/CoinBase.java" />
-    <entry file="file://$PROJECT_DIR$/nimabi.log" />
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_161/src.zip!/java/util/concurrent/ExecutorService.java">
+    <entry file="file://$PROJECT_DIR$/NiMaBi.iml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="263" column="14" lean-forward="false" selection-start-line="263" selection-start-column="14" selection-end-line="263" selection-end-column="14" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_161/src.zip!/java/net/ServerSocket.java">
+    <entry file="jar://C:/Program Files/Java/jdk-9.0.4/lib/src.zip!/java.base/java/lang/Integer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="506" column="18" lean-forward="false" selection-start-line="506" selection-start-column="18" selection-end-line="506" selection-end-column="18" />
+        <state relative-caret-position="196">
+          <caret line="768" column="69" lean-forward="false" selection-start-line="768" selection-start-column="48" selection-end-line="768" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MessageChecker/src/main/java/ClientMessageChecker.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="291">
+          <caret line="21" column="64" lean-forward="true" selection-start-line="21" selection-start-column="64" selection-end-line="21" selection-end-column="64" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/CoinGenerator/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
+        <state relative-caret-position="291">
           <caret line="16" column="28" lean-forward="false" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MessageChecker/src/main/java/InvalidMessageException.java" />
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="file://$PROJECT_DIR$/NiMaBiServer/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="24" column="40" lean-forward="false" selection-start-line="24" selection-start-column="40" selection-end-line="24" selection-end-column="40" />
+        <state relative-caret-position="-84">
+          <caret line="11" column="41" lean-forward="false" selection-start-line="11" selection-start-column="41" selection-end-line="11" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MessageChecker/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="14" column="20" lean-forward="false" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
           <folding />
         </state>
       </provider>
@@ -843,115 +870,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/NiMaBiServer/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="366">
-          <caret line="24" column="20" lean-forward="true" selection-start-line="24" selection-start-column="20" selection-end-line="24" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_161/src.zip!/java/lang/Enum.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="54" column="22" lean-forward="false" selection-start-line="54" selection-start-column="22" selection-end-line="54" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Message/src/main/java/RequestType.java" />
-    <entry file="file://$PROJECT_DIR$/MessageChecker/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="14" column="20" lean-forward="true" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/NiMaBiServer/src/main/resources/log4j.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="11" column="29" lean-forward="false" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Coin/src/main/java/CoinHistory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="6" column="5" lean-forward="true" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_161/src.zip!/java/util/Random.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="571">
-          <caret line="530" column="18" lean-forward="false" selection-start-line="530" selection-start-column="18" selection-end-line="530" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Coin/src/main/java/StandardCoin.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25">
-          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Coin/src/main/java/Coin.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="22" lean-forward="false" selection-start-line="0" selection-start-column="22" selection-end-line="0" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_161/src.zip!/java/lang/Math.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="646">
-          <caret line="771" column="25" lean-forward="false" selection-start-line="771" selection-start-column="25" selection-end-line="771" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/CoinGenerator/src/main/java/CoinGeneratorException.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
+        <state relative-caret-position="200">
           <caret line="14" column="52" lean-forward="true" selection-start-line="14" selection-start-column="52" selection-end-line="14" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/NiMaBiServer/src/main/resources/nimabi.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="6" column="39" lean-forward="false" selection-start-line="6" selection-start-column="39" selection-end-line="6" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Message/src/main/java/ClientMessage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="18" column="5" lean-forward="true" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MessageChecker/src/main/java/ClientMessageException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="13" lean-forward="false" selection-start-line="0" selection-start-column="13" selection-end-line="0" selection-end-column="13" />
           <folding>
-            <element signature="e#93#94#0" expanded="true" />
-            <element signature="e#116#117#0" expanded="true" />
-            <element signature="e#169#170#0" expanded="true" />
-            <element signature="e#199#200#0" expanded="true" />
-            <element signature="e#269#270#0" expanded="true" />
-            <element signature="e#306#307#0" expanded="true" />
-            <element signature="e#360#361#0" expanded="true" />
-            <element signature="e#388#389#0" expanded="true" />
+            <element signature="e#388#389#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MessageChecker/src/main/java/ClientMessageChecker.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="166">
-          <caret line="16" column="149" lean-forward="false" selection-start-line="16" selection-start-column="149" selection-end-line="16" selection-end-column="149" />
         </state>
       </provider>
     </entry>
@@ -962,45 +887,347 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/NiMaBiServer/src/main/java/ServerConfig.java">
+    <entry file="file://$PROJECT_DIR$/Coin/src/main/java/CoinHistory.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="15" column="12" lean-forward="true" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="12" />
+        <state relative-caret-position="150">
+          <caret line="6" column="5" lean-forward="true" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/NiMaBiServer/src/main/java/NiMaBiServerStarter.java">
+    <entry file="file://$PROJECT_DIR$/Coin/src/main/java/Coin.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="725">
-          <caret line="38" column="63" lean-forward="false" selection-start-line="38" selection-start-column="63" selection-end-line="38" selection-end-column="63" />
-          <folding />
+        <state relative-caret-position="200">
+          <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/CoinGenerator/src/main/java/CoinGenerator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1725">
-          <caret line="71" column="5" lean-forward="false" selection-start-line="71" selection-start-column="5" selection-end-line="71" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="190">
+          <caret line="42" column="107" lean-forward="true" selection-start-line="42" selection-start-column="107" selection-end-line="42" selection-end-column="107" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/NiMaBiServer/src/main/java/ClientThread.java">
+    <entry file="file://$PROJECT_DIR$/Coin/src/main/java/StandardCoin.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="481">
-          <caret line="42" column="60" lean-forward="false" selection-start-line="42" selection-start-column="60" selection-end-line="42" selection-end-column="60" />
+        <state relative-caret-position="25">
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sql/triggers.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Database/src/main/java/Model/Coin.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#177#178#0" expanded="false" />
+            <element signature="e#207#208#0" expanded="false" />
+            <element signature="e#250#251#0" expanded="false" />
+            <element signature="e#288#289#0" expanded="false" />
+            <element signature="e#326#327#0" expanded="false" />
+            <element signature="e#360#361#0" expanded="false" />
+            <element signature="e#414#415#0" expanded="false" />
+            <element signature="e#460#461#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/libraries/Maven__log4j_log4j_1_2_17.xml">
+    <entry file="file://$PROJECT_DIR$/Database/src/main/java/Model/CoinHistory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="11" column="27" lean-forward="true" selection-start-line="8" selection-start-column="2" selection-end-line="11" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#274#275#0" expanded="false" />
+            <element signature="e#299#300#0" expanded="false" />
+            <element signature="e#332#333#0" expanded="false" />
+            <element signature="e#360#361#0" expanded="false" />
+            <element signature="e#394#395#0" expanded="false" />
+            <element signature="e#426#427#0" expanded="false" />
+            <element signature="e#474#475#0" expanded="false" />
+            <element signature="e#516#517#0" expanded="false" />
+            <element signature="e#548#549#0" expanded="false" />
+            <element signature="e#579#580#0" expanded="false" />
+            <element signature="e#624#625#0" expanded="false" />
+            <element signature="e#664#665#0" expanded="false" />
+            <element signature="e#698#699#0" expanded="false" />
+            <element signature="e#725#726#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Database/src/main/java/Model/Event.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="7" column="31" lean-forward="false" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="31" />
+          <folding>
+            <element signature="e#180#181#0" expanded="false" />
+            <element signature="e#211#212#0" expanded="false" />
+            <element signature="e#256#257#0" expanded="false" />
+            <element signature="e#296#297#0" expanded="false" />
+            <element signature="e#334#335#0" expanded="false" />
+            <element signature="e#368#369#0" expanded="false" />
+            <element signature="e#422#423#0" expanded="false" />
+            <element signature="e#468#469#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Database/src/main/java/Model/GeneratedCoin.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sql/tables.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="23" column="21" lean-forward="false" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Database/src/main/java/DAO/GeneratedCoinDAOImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="500">
+          <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#302#303#0" expanded="false" />
+            <element signature="e#360#361#0" expanded="false" />
+            <element signature="e#414#415#0" expanded="false" />
+            <element signature="e#474#475#0" expanded="false" />
+            <element signature="e#528#529#0" expanded="false" />
+            <element signature="e#588#589#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Database/src/main/java/DAO/GeneratedCoinDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="6" column="17" lean-forward="false" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Database/src/main/java/DAO/EventDAOImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Database/src/main/java/DAO/EventDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25">
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Database/src/main/java/DAO/ClientDAOImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Database/src/main/java/BusinessObject/EventBO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="2" column="19" lean-forward="false" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Database/src/main/java/BusinessObject/EventBOImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Database/src/main/java/BusinessObject/GeneratedCoinBO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="6" column="17" lean-forward="false" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Database/src/main/java/BusinessObject/CoinHistoryBO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="2" column="25" lean-forward="false" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Database/src/main/java/BusinessObject/CoinHistoryBOImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Database/src/main/java/BusinessObject/CoinBOImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#523#524#0" expanded="false" />
+            <element signature="e#583#584#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Database/src/main/java/BusinessObject/CoinBO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="2" column="18" lean-forward="false" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Database/src/main/java/BusinessObject/ClientBOImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#202#203#0" expanded="false" />
+            <element signature="e#244#245#0" expanded="false" />
+            <element signature="e#283#284#0" expanded="false" />
+            <element signature="e#326#327#0" expanded="false" />
+            <element signature="e#367#368#0" expanded="false" />
+            <element signature="e#412#413#0" expanded="false" />
+            <element signature="e#453#454#0" expanded="false" />
+            <element signature="e#498#499#0" expanded="false" />
+            <element signature="e#557#558#0" expanded="false" />
+            <element signature="e#625#626#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Database/src/main/java/BusinessObject/ClientBO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="6" column="16" lean-forward="false" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Database/src/main/java/Model/Client.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="11" column="36" lean-forward="false" selection-start-line="11" selection-start-column="36" selection-end-line="11" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Database/src/main/java/BusinessObject/GeneratedCoinBOImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="16" column="50" lean-forward="false" selection-start-line="16" selection-start-column="50" selection-end-line="16" selection-end-column="50" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#311#312#0" expanded="true" />
+            <element signature="e#367#368#0" expanded="true" />
+            <element signature="e#419#420#0" expanded="true" />
+            <element signature="e#476#477#0" expanded="true" />
+            <element signature="e#530#531#0" expanded="true" />
+            <element signature="e#589#590#0" expanded="true" />
+            <element signature="e#643#644#0" expanded="true" />
+            <element signature="e#702#703#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="14" column="38" lean-forward="false" selection-start-line="14" selection-start-column="38" selection-end-line="14" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Database/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
-          <caret line="12" column="12" lean-forward="true" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="12" />
+          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Database/src/main/java/DAO/CoinDAOImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Database/src/main/java/DAO/CoinHistoryDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="6" column="17" lean-forward="false" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Database/src/main/java/DAO/ClientDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Database/src/main/java/DAO/CoinHistoryDAOImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Database/src/main/java/DAO/CoinDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="5" column="17" lean-forward="false" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
           <folding />
         </state>
       </provider>
@@ -1065,7 +1292,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>NiMaBi</last-edited>
+          <last-edited>CoinGenerator</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
