@@ -33,4 +33,8 @@ public class GeneratedCoinBOImpl implements GeneratedCoinBO {
         return this.generatedCoinDAO.findGeneratedCoinsByCurrentEventID(currentEventID);
     }
 
+    public List<GeneratedCoin> findGeneratedCoinsByCoinType(int coinType) {
+         return this.generatedCoinDAO.findGeneratedCoinsByCoinType(coinType);
+    }
+
 }

@@ -7,6 +7,7 @@ public class GeneratedCoin implements Serializable {
 
     private int id;
     private UUID coin_uuid;
+    private int coin_type;
     private int current_event_id;
 
     public int getId() {
@@ -23,6 +24,14 @@ public class GeneratedCoin implements Serializable {
 
     public void setCoin_uuid(UUID coin_uuid) {
         this.coin_uuid = coin_uuid;
+    }
+
+    public int getCoin_type() {
+        return coin_type;
+    }
+
+    public void setCoin_type(int coin_type) {
+        this.coin_type = coin_type;
     }
 
     public int getCurrent_event_id() {

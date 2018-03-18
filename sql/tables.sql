@@ -13,7 +13,7 @@ CREATE TABLE IF NOT EXISTS `client` (
     PRIMARY KEY (`client_account_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
-CREATE TABLE IF NOT EXISTS `coin` (
+CREATE TABLE IF NOT EXISTS `coin_definition` (
     `coin_id` INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
     `description` VARCHAR(32) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
@@ -21,6 +21,7 @@ CREATE TABLE IF NOT EXISTS `coin` (
 CREATE TABLE IF NOT EXISTS `generated_coin` (
     `id` INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
     `coin_uuid` VARCHAR(32) NOT NULL,
+    `coin_type` INT NOT NULL,
     `current_event_id` INT NOT NULL DEFAULT 1
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 

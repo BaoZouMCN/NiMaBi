@@ -1,3 +1,4 @@
+import BusinessObject.*;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 
@@ -12,12 +13,30 @@ public class ClientThread implements Runnable {
     private final Socket clientSocket;
     private final CoinGenerator coinGenerator;
     private final ClientMessageChecker clientMessageChecker;
+    private final ClientBO clientBO;
+    private final CoinDefinitionBO coinBO;
+    private final CoinHistoryBO coinHistoryBO;
+    private final EventBO eventBO;
+    private final GeneratedCoinBO generatedCoinBO;
 
     @Autowired
-    public ClientThread(Socket clientSocket, ClientMessageChecker clientMessageChecker, CoinGenerator coinGenerator){
+    public ClientThread(Socket clientSocket,
+                        ClientMessageChecker clientMessageChecker,
+                        CoinGenerator coinGenerator,
+                        ClientBO clientBO,
+                        CoinDefinitionBO coinBO,
+                        CoinHistoryBO coinHistoryBO,
+                        EventBO eventBO,
+                        GeneratedCoinBO generatedCoinBO
+    ){
         this.clientSocket = clientSocket;
         this.clientMessageChecker = clientMessageChecker;
         this.coinGenerator = coinGenerator;
+        this.clientBO = clientBO;
+        this.coinBO = coinBO;
+        this.coinHistoryBO = coinHistoryBO;
+        this.eventBO = eventBO;
+        this.generatedCoinBO = generatedCoinBO;
     }
 
     public void run() {
@@ -30,7 +49,7 @@ public class ClientThread implements Runnable {
                 ClientMessage clientMessage = clientMessageChecker.checkClientMessage(clientString);
                 switch (clientMessage.getRequestType()) {
                     case GENERATE_COIN:
-                        Coin coin = coinGenerator.generateCoin(clientMessage.getClientAccountID(), clientMessage.getRequestDetails());
+                        GeneratedCoin coin = coinGenerator.generateCoin(clientMessage.getClientAccountID(), clientMessage.getRequestDetails());
                         //TODO register generated coin in database against client's account
                         //TODO return generated coin to client
                         break;

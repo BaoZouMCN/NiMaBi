@@ -7,25 +7,29 @@ import java.util.UUID;
 
 public class GeneratedCoinDAOImpl extends HibernateDaoSupport implements GeneratedCoinDAO {
 
-    public void save(GeneratedCoin generatedCoin){
+    public void save(GeneratedCoin generatedCoin) {
         getHibernateTemplate().save(generatedCoin);
     }
 
-    public void update(GeneratedCoin generatedCoin){
+    public void update(GeneratedCoin generatedCoin) {
         getHibernateTemplate().update(generatedCoin);
     }
 
-    public void delete(GeneratedCoin generatedCoin){
+    public void delete(GeneratedCoin generatedCoin) {
         getHibernateTemplate().delete(generatedCoin);
     }
 
-    public GeneratedCoin findGeneratedCoinByCoinUUID(UUID coinUUID){
+    public GeneratedCoin findGeneratedCoinByCoinUUID(UUID coinUUID) {
         List<GeneratedCoin> list = getHibernateTemplate().find("from generated_coin where coin_uuid=?", coinUUID);
         return list.get(0);
     }
 
-    public List<GeneratedCoin> findGeneratedCoinsByCurrentEventID(int currentEventID){
+    public List<GeneratedCoin> findGeneratedCoinsByCurrentEventID(int currentEventID) {
         return getHibernateTemplate().find("from generated_coin where current_event_id=?", currentEventID);
+    }
+
+    public List<GeneratedCoin> findGeneratedCoinsByCoinType(int coinType) {
+        return getHibernateTemplate().find("from generated_coin where coin_type=?", coinType);
     }
 
 }

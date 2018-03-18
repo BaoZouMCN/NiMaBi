@@ -1,0 +1,15 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+
+    <!-- CoinHistory business object -->
+    <bean id="coinHistoryBO" class="com.baozou.NiMaBi.Database.BusinessObject.CoinHistoryBOImpl" >
+        <property name="coinHistoryDAO" ref="coinHistoryDAO" />
+    </bean>
+    <!-- CoinHistory Data Access Object -->
+    <bean id="coinHistoryDAO" class="com.baozou.NiMaBi.Database.DAO.CoinHistoryDAOImpl" >
+        <property name="sessionFactory" ref="sessionFactory"></property>
+    </bean>
+
+</beans>

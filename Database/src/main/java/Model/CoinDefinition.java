@@ -2,7 +2,7 @@ package Model;
 
 import java.io.Serializable;
 
-public class Coin implements Serializable {
+public class CoinDefinition implements Serializable {
 
     private int coin_id;
     private String description;

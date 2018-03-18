@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="com.baozou.NiMaBi.Database.Model.Client" table="client">
+        <id name="client_account_id" type="java.lang.Integer">
+            <column name="client_account_id"/>
+            <generator class="identity"/>
+        </id>
+        <property name="baozou_id" type="string">
+            <column name="baozou_id" length="32" not-null="true" unique="true"/>
+        </property>
+        <property name="number_of_standard_coin" type="java.lang.Integer">
+            <column name="number_of_standard_coin" length="10" not-null="true" default="0"/>
+        </property>
+        <property name="number_of_wangnima_coin" type="java.lang.Integer">
+            <column name="number_of_wangnima_coin" length="10" not-null="true" default="0"/>
+        </property>
+        <property name="number_of_zhijin_coin" type="java.lang.Integer">
+            <column name="number_of_zhijin_coin" length="10" not-null="true" default="0"/>
+        </property>
+        <property name="number_of_muzi_coin" type="java.lang.Integer">
+            <column name="number_of_muzi_coin" length="10" not-null="true" default="0"/>
+        </property>
+        <property name="number_of_pino_coin" type="java.lang.Integer">
+            <column name="number_of_pino_coin" length="10" not-null="true" default="0"/>
+        </property>
+        <property name="number_of_zhangquandan_coin" type="java.lang.Integer">
+            <column name="number_of_zhangquandan_coin" length="10" not-null="true" default="0"/>
+        </property>
+        <property name="number_of_daduizhang_coin" type="java.lang.Integer">
+            <column name="number_of_daduizhang_coin" length="10" not-null="true" default="0"/>
+        </property>
+        <property name="number_of_zhaotiezhu_coin" type="java.lang.Integer">
+            <column name="number_of_zhaotiezhu_coin" length="10" not-null="true" default="0"/>
+        </property>
+        <property name="number_of_luofugui_coin" type="java.lang.Integer">
+            <column name="number_of_luofugui_coin" length="10" not-null="true" default="0"/>
+        </property>
+    </class>
+</hibernate-mapping>

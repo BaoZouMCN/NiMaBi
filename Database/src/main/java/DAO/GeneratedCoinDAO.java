@@ -16,4 +16,6 @@ public interface GeneratedCoinDAO {
 
     public List<GeneratedCoin> findGeneratedCoinsByCurrentEventID(int currentEventID);
 
+    public List<GeneratedCoin> findGeneratedCoinsByCoinType(int coinType);
+
 }

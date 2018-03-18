@@ -1,0 +1,15 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+
+    <!-- Event business object -->
+    <bean id="eventBO" class="com.baozou.NiMaBi.Database.BusinessObject.EventBOImpl" >
+        <property name="eventDAO" ref="eventDAO" />
+    </bean>
+    <!-- Event Data Access Object -->
+    <bean id="eventDAO" class="com.baozou.NiMaBi.Database.DAO.EventDAOImpl" >
+        <property name="sessionFactory" ref="sessionFactory"></property>
+    </bean>
+
+</beans>
