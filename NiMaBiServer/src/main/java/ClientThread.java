@@ -1,4 +1,5 @@
 import BusinessObject.*;
+import Model.GeneratedCoin;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 
@@ -49,7 +50,7 @@ public class ClientThread implements Runnable {
                 ClientMessage clientMessage = clientMessageChecker.checkClientMessage(clientString);
                 switch (clientMessage.getRequestType()) {
                     case GENERATE_COIN:
-                        GeneratedCoin coin = coinGenerator.generateCoin(clientMessage.getClientAccountID(), clientMessage.getRequestDetails());
+                        GeneratedCoin generatedCoin = coinGenerator.generateCoin(clientMessage.getClientAccountID(), clientMessage.getRequestDetails());
                         //TODO register generated coin in database against client's account
                         //TODO return generated coin to client
                         break;
