@@ -1,3 +1,11 @@
+-- COIN DEFINITION SETUP --
+
+INSERT INTO coin_definition(description)
+SELECT * FROM (SELECT 'STANDARD') AS tmp
+WHERE NOT EXISTS (
+    SELECT description FROM coin_definition WHERE description = 'STANDARD'
+) LIMIT 1;
+
 INSERT INTO coin_definition(description)
 SELECT * FROM (SELECT 'WANGNIMA') AS tmp
 WHERE NOT EXISTS (
@@ -44,4 +52,12 @@ INSERT INTO coin_definition(description)
 SELECT * FROM (SELECT 'LUOFUGUI') AS tmp
 WHERE NOT EXISTS (
     SELECT description FROM coin_definition WHERE description = 'LUOFUGUI'
+) LIMIT 1;
+
+-- EVENT DEFINITION SETUP --
+
+INSERT INTO event_definition(description)
+SELECT * FROM (SELECT 'NONE') AS tmp
+WHERE NOT EXISTS (
+    SELECT description FROM event_definition WHERE description = 'NONE'
 ) LIMIT 1;

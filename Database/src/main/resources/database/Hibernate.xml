@@ -20,7 +20,7 @@ http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
                 <value>/hibernate/Client.hbm.xml</value>
                 <value>/hibernate/CoinDefinition.hbm.xml</value>
                 <value>/hibernate/CoinHistory.hbm.xml</value>
-                <value>/hibernate/Event.hbm.xml</value>
+                <value>/hibernate/EventDefinition.hbm.xml</value>
                 <value>/hibernate/GeneratedCoin.hbm.xml</value>
             </list>
         </property>

@@ -4,8 +4,8 @@
 
 <hibernate-mapping>
     <class name="com.baozou.NiMaBi.Database.Model.CoinDefinition" table="coin">
-        <id name="coin_id" type="java.lang.Integer">
-            <column name="coin_id" />
+        <id name="coin_definition_id" type="java.lang.Integer">
+            <column name="coin_definition_id" />
             <generator class="identity" />
         </id>
         <property name="description" type="string">

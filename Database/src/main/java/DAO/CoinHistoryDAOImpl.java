@@ -2,6 +2,7 @@ package DAO;
 
 import Model.CoinHistory;
 import org.springframework.orm.hibernate3.support.HibernateDaoSupport;
+
 import java.util.List;
 import java.util.UUID;
 

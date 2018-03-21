@@ -14,6 +14,8 @@ public interface CoinDefinitionBO {
 
     public CoinDefinition findCoinByCoinID(int coinID);
 
+    public List<CoinDefinition> listAllCoinDefinitions();
+
     public List<CoinDefinition> findCoinsByDescription(String description);
 
 }

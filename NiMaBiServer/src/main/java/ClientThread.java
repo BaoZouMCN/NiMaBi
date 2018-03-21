@@ -17,7 +17,7 @@ public class ClientThread implements Runnable {
     private final ClientBO clientBO;
     private final CoinDefinitionBO coinBO;
     private final CoinHistoryBO coinHistoryBO;
-    private final EventBO eventBO;
+    private final EventDefinitionBO eventBO;
     private final GeneratedCoinBO generatedCoinBO;
 
     @Autowired
@@ -27,7 +27,7 @@ public class ClientThread implements Runnable {
                         ClientBO clientBO,
                         CoinDefinitionBO coinBO,
                         CoinHistoryBO coinHistoryBO,
-                        EventBO eventBO,
+                        EventDefinitionBO eventBO,
                         GeneratedCoinBO generatedCoinBO
     ){
         this.clientSocket = clientSocket;

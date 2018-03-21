@@ -1,6 +1,10 @@
+import BusinessObject.CoinDefinitionBO;
+import Model.GeneratedCoin;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
+
+import java.util.UUID;
 
 @Component
 public class CoinGenerator {
@@ -17,6 +21,7 @@ public class CoinGenerator {
     private final double characterCoinProbabilityDaduizhang;
     private final double characterCoinProbabilityZhaotiezhu;
     private final double characterCoinProbabilityLuofugui;
+    private final CoinDefinitionBO coinDefinitionBO;
 
     public CoinGenerator(@Value("#{new Double('${standardCoinProbability}')}") double standardCoinProbability,
                          @Value("#{new Double('${characterCoinProbability}')}") double characterCoinProbability,
@@ -27,7 +32,9 @@ public class CoinGenerator {
                          @Value("#{new Double('${characterCoinProbability.zhangquandan}')}") double characterCoinProbabilityZhangquandan,
                          @Value("#{new Double('${characterCoinProbability.daduizhang}')}") double characterCoinProbabilityDaduizhang,
                          @Value("#{new Double('${characterCoinProbability.zhaotiezhu}')}") double characterCoinProbabilityZhaotiezhu,
-                         @Value("#{new Double('${characterCoinProbability.luofugui}')}") double characterCoinProbabilityLuofugui) {
+                         @Value("#{new Double('${characterCoinProbability.luofugui}')}") double characterCoinProbabilityLuofugui,
+                         CoinDefinitionBO coinDefinitionBO
+    ) {
         this.standardCoinProbability = standardCoinProbability;
         this.characterCoinProbability = characterCoinProbability;
         this.characterCoinProbabilityWangnima = characterCoinProbabilityWangnima;
@@ -38,36 +45,50 @@ public class CoinGenerator {
         this.characterCoinProbabilityDaduizhang = characterCoinProbabilityDaduizhang;
         this.characterCoinProbabilityZhaotiezhu = characterCoinProbabilityZhaotiezhu;
         this.characterCoinProbabilityLuofugui = characterCoinProbabilityLuofugui;
+        this.coinDefinitionBO = coinDefinitionBO;
     }
 
-    public Coin generateCoin(String clientAccountID, String requestDetails) throws CoinGeneratorException {
+    public GeneratedCoin generateCoin(String clientAccountID, String requestDetails) throws CoinGeneratorException {
+        // TODO currently all generated coins are hardcoded to event 'NONE' with event_definition_id = 1, they should be coming from request details
         // rolling for either standard or character coin
         double random = Math.random();
         if (random <= standardCoinProbability) {
-            return new StandardCoin();
+            return new GeneratedCoin(UUID.randomUUID(), coinDefinitionBO.findCoinsByDescription(Character.NONE.name()).get(0).getCoin_definition_id());
         } else {
             // rolling for individual character
             random = Math.random();
             if (random < characterCoinProbabilityWangnima) {
-                return new CharacterCoin(CharacterCoin.Character.WANGNIMA);
+                return new GeneratedCoin(UUID.randomUUID(), coinDefinitionBO.findCoinsByDescription(Character.WANGNIMA.name()).get(0).getCoin_definition_id());
             } else if (characterCoinProbabilityWangnima <= random && random < characterCoinProbabilityZhijin) {
-                return new CharacterCoin(CharacterCoin.Character.ZHIJIN);
+                return new GeneratedCoin(UUID.randomUUID(), coinDefinitionBO.findCoinsByDescription(Character.ZHIJIN.name()).get(0).getCoin_definition_id());
             } else if (characterCoinProbabilityZhijin <= random && random < characterCoinProbabilityMuzi) {
-                return new CharacterCoin(CharacterCoin.Character.MUZI);
+                return new GeneratedCoin(UUID.randomUUID(), coinDefinitionBO.findCoinsByDescription(Character.MUZI.name()).get(0).getCoin_definition_id());
             } else if (characterCoinProbabilityMuzi <= random && random < characterCoinProbabilityPino) {
-                return new CharacterCoin(CharacterCoin.Character.PINO);
+                return new GeneratedCoin(UUID.randomUUID(), coinDefinitionBO.findCoinsByDescription(Character.PINO.name()).get(0).getCoin_definition_id());
             } else if (characterCoinProbabilityPino <= random && random < characterCoinProbabilityZhangquandan) {
-                return new CharacterCoin(CharacterCoin.Character.ZHANGQUANDAN);
+                return new GeneratedCoin(UUID.randomUUID(), coinDefinitionBO.findCoinsByDescription(Character.ZHANGQUANDAN.name()).get(0).getCoin_definition_id());
             } else if (characterCoinProbabilityZhangquandan <= random && random < characterCoinProbabilityDaduizhang) {
-                return new CharacterCoin(CharacterCoin.Character.DADUIZHANG);
+                return new GeneratedCoin(UUID.randomUUID(), coinDefinitionBO.findCoinsByDescription(Character.DADUIZHANG.name()).get(0).getCoin_definition_id());
             } else if (characterCoinProbabilityDaduizhang <= random && random < characterCoinProbabilityZhaotiezhu) {
-                return new CharacterCoin(CharacterCoin.Character.ZHAOTIEZHU);
+                return new GeneratedCoin(UUID.randomUUID(), coinDefinitionBO.findCoinsByDescription(Character.ZHAOTIEZHU.name()).get(0).getCoin_definition_id());
             } else if (characterCoinProbabilityZhaotiezhu <= random && random < characterCoinProbabilityLuofugui) {
-                return new CharacterCoin(CharacterCoin.Character.LUOFUGUI);
+                return new GeneratedCoin(UUID.randomUUID(), coinDefinitionBO.findCoinsByDescription(Character.LUOFUGUI.name()).get(0).getCoin_definition_id());
             }
         }
         String errorMsg = "No coin has been generated, please check probabilities";
         logger.error(errorMsg);
         throw new CoinGeneratorException(errorMsg);
+    }
+
+    public enum Character {
+        NONE,
+        WANGNIMA,
+        ZHIJIN,
+        MUZI,
+        PINO,
+        ZHANGQUANDAN,
+        DADUIZHANG,
+        ZHAOTIEZHU,
+        LUOFUGUI
     }
 }

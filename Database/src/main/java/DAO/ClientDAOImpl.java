@@ -2,6 +2,7 @@ package DAO;
 
 import Model.Client;
 import org.springframework.orm.hibernate3.support.HibernateDaoSupport;
+
 import java.util.List;
 
 public class ClientDAOImpl extends HibernateDaoSupport implements ClientDAO {

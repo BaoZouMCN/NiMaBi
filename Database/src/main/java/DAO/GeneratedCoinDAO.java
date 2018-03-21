@@ -1,6 +1,7 @@
 package DAO;
 
 import Model.GeneratedCoin;
+
 import java.util.List;
 import java.util.UUID;
 

@@ -11,8 +11,8 @@
         <property name="coin_uuid" type="string">
             <column name="coin_uuid" length="32" not-null="true" />
         </property>
-        <property name="coin_type" type="java.lang.Integer">
-            <column name="coin_type" length="10" not-null="true" />
+        <property name="coin_definition_id" type="java.lang.Integer">
+            <column name="coin_definition_id" length="10" not-null="true" />
         </property>
         <property name="current_event_id" type="java.lang.Integer">
             <column name="current_event_id" length="10" not-null="true" default="1" />

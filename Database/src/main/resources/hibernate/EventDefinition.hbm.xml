@@ -3,9 +3,9 @@
         "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
 
 <hibernate-mapping>
-    <class name="com.baozou.NiMaBi.Database.Model.Event" table="event">
-        <id name="event_id" type="java.lang.Integer">
-            <column name="event_id" />
+    <class name="com.baozou.NiMaBi.Database.Model.EventDefinition" table="event">
+        <id name="event_definition_id" type="java.lang.Integer">
+            <column name="event_definition_id" />
             <generator class="identity" />
         </id>
         <property name="description" type="string">

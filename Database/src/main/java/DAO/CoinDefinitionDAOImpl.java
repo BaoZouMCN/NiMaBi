@@ -2,6 +2,7 @@ package DAO;
 
 import Model.CoinDefinition;
 import org.springframework.orm.hibernate3.support.HibernateDaoSupport;
+
 import java.util.List;
 
 public class CoinDefinitionDAOImpl extends HibernateDaoSupport implements CoinDefinitionDAO {
@@ -19,11 +20,16 @@ public class CoinDefinitionDAOImpl extends HibernateDaoSupport implements CoinDe
     }
 
     public CoinDefinition findCoinByCoinID(int coinID) {
-        List<CoinDefinition> list = getHibernateTemplate().find("from coin where coin_id=?", coinID);
+        List<CoinDefinition> list = getHibernateTemplate().find("from coin_definition where coin_id=?", coinID);
         return list.get(0);
     }
 
-    public List<CoinDefinition> findCoinsByDescription(String description) {
-        return getHibernateTemplate().find("from coin where description like `%?%`", description);
+    public List<CoinDefinition> listAllCoinDefinitions() {
+        return getHibernateTemplate().find("from coin_definition");
     }
+
+    public List<CoinDefinition> findCoinsByDescription(String description) {
+        return getHibernateTemplate().find("from coin_definition where description like `%?%`", description);
+    }
+
 }

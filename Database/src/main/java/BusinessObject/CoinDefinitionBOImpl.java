@@ -2,34 +2,39 @@ package BusinessObject;
 
 import DAO.CoinDefinitionDAO;
 import Model.CoinDefinition;
+
 import java.util.List;
 
 public class CoinDefinitionBOImpl implements CoinDefinitionBO {
 
-    private CoinDefinitionDAO coinDAO;
+    private CoinDefinitionDAO coinDefinitionDAO;
 
     public void setCoinDAO(CoinDefinitionDAO coinDAO) {
-        this.coinDAO = coinDAO;
+        this.coinDefinitionDAO = coinDAO;
     }
 
     public void save(CoinDefinition coin) {
-        this.coinDAO.save(coin);
+        this.coinDefinitionDAO.save(coin);
     }
 
     public void update(CoinDefinition coin) {
-        this.coinDAO.update(coin);
+        this.coinDefinitionDAO.update(coin);
     }
 
     public void delete(CoinDefinition coin) {
-        this.coinDAO.delete(coin);
+        this.coinDefinitionDAO.delete(coin);
     }
 
     public CoinDefinition findCoinByCoinID(int coinID) {
-        return this.coinDAO.findCoinByCoinID(coinID);
+        return this.coinDefinitionDAO.findCoinByCoinID(coinID);
+    }
+
+    public List<CoinDefinition> listAllCoinDefinitions() {
+        return this.coinDefinitionDAO.listAllCoinDefinitions();
     }
 
     public List<CoinDefinition> findCoinsByDescription(String description) {
-        return this.coinDAO.findCoinsByDescription(description);
+        return this.coinDefinitionDAO.findCoinsByDescription(description);
     }
 
 }

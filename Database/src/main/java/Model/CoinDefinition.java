@@ -4,15 +4,15 @@ import java.io.Serializable;
 
 public class CoinDefinition implements Serializable {
 
-    private int coin_id;
+    private int coin_definition_id;
     private String description;
 
-    public int getCoin_id() {
-        return coin_id;
+    public int getCoin_definition_id() {
+        return coin_definition_id;
     }
 
-    public void setCoin_id(int coin_id) {
-        this.coin_id = coin_id;
+    public void setCoin_definition_id(int coin_definition_id) {
+        this.coin_definition_id = coin_definition_id;
     }
 
     public String getDescription() {
